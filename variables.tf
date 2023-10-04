@@ -16,7 +16,7 @@ variable "project_name" {
 }
 #Even optional it is good to give tags
 variable "common_tags" {
-    default = {} 
+    default = {}
 }
 
 variable "vpc_tags" {
@@ -69,4 +69,20 @@ variable "database_route_table_tags" {
 
 variable "db_subnet_group_tags" {
   default = {}
+}
+
+variable "is_peering_required" {
+  default = false
+}
+
+variable "requestor_vpc_id" {
+  
+}
+
+variable "default_route_table_id" {
+  
+}
+
+variable "default_vpc_cidr" {
+  
 }
